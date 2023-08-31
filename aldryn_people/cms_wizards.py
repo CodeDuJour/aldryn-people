@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 from django.urls import NoReverseMatch, reverse
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from cms.wizards.forms import BaseFormMixin
 from cms.wizards.wizard_base import Wizard
