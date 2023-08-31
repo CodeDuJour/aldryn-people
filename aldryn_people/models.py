@@ -252,7 +252,6 @@ class Person(TranslationHelperMixin, TranslatedAutoSlugifyMixin,
         return six.b('{}'.format(vcard))
 
 
-@python_2_unicode_compatible
 class BasePeoplePlugin(CMSPlugin):
 
     STYLE_CHOICES = [
