@@ -2,7 +2,7 @@
 
 from __future__ import unicode_literals
 
-from django.utils.translation import get_language_from_request, ugettext as _
+from django.utils.translation import get_language_from_request, gettext as _
 
 from cms.toolbar_base import CMSToolbar
 from cms.toolbar_pool import toolbar_pool
