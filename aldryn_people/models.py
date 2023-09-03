@@ -35,6 +35,8 @@ except ImportError:
 
 class Group(TranslationHelperMixin, TranslatedAutoSlugifyMixin,
             TranslatableModel):
+
+    id = models.AutoField(primary_key=True)
     slug_source_field_name = 'name'
     translations = TranslatedFields(
         name=models.CharField(_('name'), max_length=255,
@@ -101,6 +103,8 @@ class Group(TranslationHelperMixin, TranslatedAutoSlugifyMixin,
 class Person(TranslationHelperMixin, TranslatedAutoSlugifyMixin,
              TranslatableModel):
     slug_source_field_name = 'name'
+
+    id = models.AutoField(primary_key=True)
 
     translations = TranslatedFields(
         name=models.CharField(
